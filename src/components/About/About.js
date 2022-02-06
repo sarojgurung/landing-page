@@ -27,7 +27,7 @@ export default function About(){
                 // markers: true
             }
         })
-        .from(aboutContainer(".about-hero-img-container img"), {
+        .from(aboutContainer(".about-hero-img-container"), {
             y: 50,
             repeat: -1,
             duration: 2,
