@@ -1,0 +1,34 @@
+.products-container{
+    padding: 8rem 0;
+    .products-text-area{
+        text-align: center;
+        .products-title{
+            height: 5rem;
+            margin: 0;
+            overflow: hidden;
+            h2{
+                font-size: 5rem;
+                span{
+                    color: #ff4f00;
+                }
+            }
+        }
+        .products-description{
+            height: .25rem;
+            overflow: hidden;
+            p{
+                font-size: 1.25rem;
+                line-height: 1.25rem;
+            }
+        }
+    }
+    .products-listing-container{
+        margin-top: 5rem;
+        .product{
+            height: 350px;
+            border: 1px solid #eee;
+            border-radius: 1rem 1rem 0 0;
+            overflow: hidden;
+        }
+    }
+}

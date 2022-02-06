@@ -1,0 +1,94 @@
+.about-container{
+    color: white;
+    overflow: hidden;
+
+    // Hero Container of About Section
+    .about-hero-img-container{
+        height: 100vh;
+        background: #fff;
+        position: relative;
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    // Stats Container of About Section
+    .about-desc-container{
+        background: linear-gradient(#2e2e2f, #31251f);
+        padding: 7rem;
+        position: relative;
+        .about-sub-title{
+            font-size: .85rem;
+            font-weight: 100;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: .8rem;
+            color: rgba(233, 233, 233, 0.5);
+            span{
+                color: #ff4f00;
+                font-weight: 400;
+            }
+        }
+        .about-title{
+            font-size: 3.5rem;
+            position: relative;
+            span{
+                display: block;
+            }
+        }
+        .about-title::before{
+            position: absolute;
+            content: "";
+            border-left: 7px solid #ff4f00;
+            left: -55px;
+            height: 100%;
+        }
+        .about-description{
+            font-size: 1.15rem;
+            line-height: 2.25rem;
+            font-weight: 100;
+        }
+        .about-btn{
+            background: rgba(255, 79, 0, .1);
+            border: 3px solid #ff4f00;
+            padding: 1.25rem 4.35rem;
+            font-size: .85rem;
+            text-transform: uppercase;
+            letter-spacing: .6rem;
+            color: white;
+            margin-bottom: 45px;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+        }
+        .about-btn:hover{
+            background-color: #ff4f00;
+        }
+
+        // Gallery Showcase Modules
+        .about-gallery-list{
+            position: absolute;
+            left: -5rem;
+            display: flex;
+            justify-content: space-between;
+            .gallery-image{
+                width: 250px;
+                background: linear-gradient(#fff, #d8d2d0);
+                border-radius: .75rem;
+                margin-right: 1rem;
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+                img{
+                    width: 100%;
+                }
+            }
+            .gallery-image:hover{
+                transform: translateY(-5%);
+                border-radius: 0;
+            }
+        }
+    }
+}

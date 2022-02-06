@@ -1,0 +1,94 @@
+.intro{
+    height: 100vh;
+    overflow: hidden;
+
+    .intro-background-container{
+        width: 400%;
+        height: 100vh;
+        display: flex;
+
+        .intro-background{
+            width: 25%;
+            height: 100%;
+            position: relative;
+
+            .intro-text-content{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                p{
+                    font-size: 10rem;
+                    line-height: 10rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                span{
+                    font-size: 1.5rem;
+                    font-weight: 200;
+                }
+
+                video{
+                    width: 99vw;
+                    height: 101vh;
+                    object-fit: cover;
+                }
+
+                h1{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    line-height: 3em;
+
+                    span{
+                        display: block;
+                        font-size: 10rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .intro-btn-group{
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .intro-btn{
+                        background-color: #fff;
+                        border: none;
+                        border-radius: .5rem;
+                        padding: 1rem 3rem;
+                        margin: .5rem;
+                        text-transform: uppercase;
+                        transition: all .5s ease-in-out;
+                    }
+
+                    .intro-btn:hover{
+                        transform: translateY(-10%);
+                    }
+                }
+            }
+        }
+
+        .intro-background-1{
+            background-color:brown;
+        }
+
+        .intro-background-2{
+            background-color: blueviolet;
+        }
+
+        .intro-background-3{
+            background-color: #ff4f00;
+        }
+
+        .intro-background-4{
+            background: url("https://www.tesla.com/xNVh4yUEc3B9/performance_video_desktop.mp4");
+        }
+    }
+}
+
