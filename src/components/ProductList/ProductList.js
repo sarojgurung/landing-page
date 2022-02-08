@@ -24,7 +24,8 @@ export default function ProductList(){
             scrollTrigger: {
                 trigger: el.current,
                 start: 'top center+=200',
-                toggleActions: 'play none none reverse'
+                end: 'bottom 50%',
+                toggleActions: 'play reverse play reverse',
                 // markers: true
             }
         })

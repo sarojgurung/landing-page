@@ -12,6 +12,8 @@ export default function Timestamp(){
     const subscribeContainer = gsap.utils.selector(el);
 
     useEffect(() =>{
+        // Animating both the elements at the same time
+        // Passing the elements as array
         gsap.from([subscribeContainer(".subscribe-title"), subscribeContainer(".input-group")], {
                 yPercent: 130,
                 stagger: .1,

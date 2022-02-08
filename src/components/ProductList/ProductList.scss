@@ -1,11 +1,14 @@
 .products-container{
     padding: 8rem 0;
+
     .products-text-area{
         text-align: center;
+
         .products-title{
             height: 5rem;
             margin: 0;
             overflow: hidden;
+
             h2{
                 font-size: 5rem;
                 span{
@@ -13,6 +16,7 @@
                 }
             }
         }
+
         .products-description{
             height: .25rem;
             overflow: hidden;
@@ -22,6 +26,7 @@
             }
         }
     }
+    
     .products-listing-container{
         margin-top: 5rem;
         .product{
