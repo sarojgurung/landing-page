@@ -6,6 +6,7 @@
     padding-left: .5rem;
     position: sticky;
     z-index: 10;
+
     .circle{
         width: 0.5rem;
         height: 0.5rem;
@@ -13,6 +14,7 @@
         background-color: #fff;
         margin: 0.2rem;
     }
+    
     .circle:nth-child(1){
         background-color: #ff4f00;
     }

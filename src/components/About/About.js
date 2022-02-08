@@ -16,14 +16,16 @@ export default function About(){
     const el = new useRef();
     const aboutContainer = gsap.utils.selector(el);
 
-    const tl = new useRef();
+    const timelineAbout = new useRef();
     
     useEffect(() =>{
-        tl.current = gsap.timeline({
+        // Timeline usage for multiple elements to be animated on scroll
+        timelineAbout.current = gsap.timeline({
             scrollTrigger: {
                 trigger: el.current,
                 start: 'top center+=100',
-                toggleActions: 'play none none reverse'
+                end: 'bottom 50%',
+                toggleActions: 'play reverse play reverse',
                 // markers: true
             }
         })
@@ -52,12 +54,12 @@ export default function About(){
             x: 100,
             autoAlpha: 0,
             duration: 1
-        }, ".2")
+        }, ".5")
         .from(aboutContainer(".about-gallery-list"),{
             y: 150,
             autoAlpha: 0,
-            duration: 2
-        }, ".2")
+            duration: 1
+        }, "1")
     });
 
     return(

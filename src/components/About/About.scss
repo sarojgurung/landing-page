@@ -7,6 +7,7 @@
         height: 100vh;
         background: #fff;
         position: relative;
+
         img{
             position: absolute;
             top: 50%;
@@ -20,6 +21,7 @@
         background: linear-gradient(#2e2e2f, #31251f);
         padding: 7rem;
         position: relative;
+
         .about-sub-title{
             font-size: .85rem;
             font-weight: 100;
@@ -27,11 +29,13 @@
             text-transform: uppercase;
             letter-spacing: .8rem;
             color: rgba(233, 233, 233, 0.5);
+
             span{
                 color: #ff4f00;
                 font-weight: 400;
             }
         }
+        
         .about-title{
             font-size: 3.5rem;
             position: relative;
