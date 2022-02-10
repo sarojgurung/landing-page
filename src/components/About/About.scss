@@ -10,6 +10,7 @@
 
         img{
             position: absolute;
+            width: 80%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -92,6 +93,48 @@
             .gallery-image:hover{
                 transform: translateY(-5%);
                 border-radius: 0;
+            }
+        }
+    }
+}
+
+//Media Query for the necessary elements to resize on different screen
+@media only screen and (max-width: 992px) {
+    .about-container{
+        .about-desc-container{
+            .about-gallery-list{
+                position: relative;
+                left: 0rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container{
+        .about-desc-container{
+            .about-gallery-list{
+                width: 100%;
+                flex-wrap: wrap;
+                .gallery-image{
+                    width: 100%;
+                    margin: 0 0 2rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .about-container{
+        .about-desc-container{
+            .about-title{
+                font-size: 2.75rem;
+            }
+            .about-gallery-list{
+                .gallery-image{
+                    width: 100%;
+                }
             }
         }
     }
