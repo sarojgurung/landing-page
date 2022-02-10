@@ -3,7 +3,7 @@
     overflow: hidden;
 
     .intro-background-container{
-        width: 400%;
+        width: 400vw;
         height: 100vh;
         display: flex;
 
@@ -19,20 +19,20 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
 
-                p{
+                .intro-title-text{
                     font-size: 10rem;
                     line-height: 10rem;
                     font-weight: 700;
                     text-transform: uppercase;
                 }
 
-                span{
+                .intro-subtitle-text{
                     font-size: 1.5rem;
                     font-weight: 200;
                 }
 
                 video{
-                    width: 99vw;
+                    width: 100vw;
                     height: 101vh;
                     object-fit: cover;
                 }
@@ -92,3 +92,67 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .intro{
+        .intro-background-container{
+            .intro-background{
+                .intro-text-content{
+                    .intro-title-text{
+                        font-size: 8rem;
+                        line-height: 7rem;
+                    }
+                    .intro-subtitle-text{
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .intro{
+        .intro-background-container{
+            .intro-background{
+                .intro-text-content{
+                    .intro-title-text{
+                        font-size: 5rem;
+                        line-height: 5rem;
+                    }
+                    .intro-subtitle-text{
+                        font-size: 1rem;
+                    }
+                    .intro-btn-group{
+                        .intro-btn{
+                            font-size: .75rem;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .intro{
+        .intro-background-container{
+            .intro-background{
+                .intro-text-content{
+                    .intro-title-text{
+                        font-size: 3rem;
+                        line-height: 3rem;
+                    }
+                    .intro-subtitle-text{
+                        font-size: 1rem;
+                    }
+                    h1{
+                        font-size: 1rem;
+                        span{
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}

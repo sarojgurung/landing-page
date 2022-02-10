@@ -15,7 +15,8 @@ export default function Intro(){
 
         const scrollAmount = el.current.scrollWidth - el.current.offsetWidth;
         
-        //Horizontal Animation
+
+        // Horizontal Animation
         gsap.to(introContainer(".intro-background-container"), {
             x: () => -scrollAmount,
             ease: 'none',
@@ -37,8 +38,8 @@ export default function Intro(){
                 <div className="intro-background-container">
                     <div className="intro-background intro-background-1">
                         <div className="intro-text-content intro-text-1">
-                            <p>Modern</p>
-                            <span>Helping build the community. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam veritatis consequatur illum accusantium. Culpa, consequuntur illo nesciunt doloremque eligendi ut architecto delectus ratione maxime?</span>
+                            <p className="intro-title-text">Modern</p>
+                            <span className="intro-subtitle-text">Helping build the community. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam veritatis consequatur illum accusantium. Culpa, consequuntur illo nesciunt doloremque eligendi ut architecto delectus ratione maxime?</span>
                             <div className="intro-btn-group">
                                 <button className="intro-btn">Read More</button>
                                 <button className="intro-btn">Contact</button>
@@ -47,14 +48,14 @@ export default function Intro(){
                     </div>
                     <div className="intro-background intro-background-2">
                         <div className="intro-text-content intro-text-2">
-                            <p>Subtle</p>
-                            <span>Sapiente laboriosam veritatis consequatur illum accusantium. Culpa, consequuntur illo nesciunt doloremque eligendi ut architecto delectus ratione.</span>
+                            <p className="intro-title-text">Subtle</p>
+                            <span className="intro-subtitle-text">Sapiente laboriosam veritatis consequatur illum accusantium. Culpa, consequuntur illo nesciunt doloremque eligendi ut architecto delectus ratione.</span>
                         </div>
                     </div>
                     <div className="intro-background intro-background-3">
                         <div className="intro-text-content intro-text-3">
-                            <p>powerful</p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam veritatis consequatur illum accusantium. Culpa, consequuntur illo nesciunt doloremque eligendi ut architecto delectus ratione maxime?</span>
+                            <p className="intro-title-text">powerful</p>
+                            <span className="intro-subtitle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam veritatis consequatur illum accusantium. Culpa, consequuntur illo nesciunt doloremque eligendi ut architecto delectus ratione maxime?</span>
                             <div className="intro-btn-group">
                                 <button className="intro-btn">Read More</button>
                                 <button className="intro-btn">Contact</button>

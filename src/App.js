@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Intro from './components/Intro/Intro';
 import ProductList from './components/ProductList/ProductList';
 import About from './components/About/About'
 import Subscribe from './components/Subscribe/Subscribe';
+import Whatwedo from './components/Whatwedo/Whatwedo';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <About />
       <ProductList />
       <Subscribe />
+      {/* <Whatwedo /> */}
     </div>
   );
 }

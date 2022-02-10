@@ -1,0 +1,20 @@
+.animatingContent{
+    position: relative;
+    background-color:crimson;
+    height: 100vh;
+    overflow: hidden;
+    // width: inherit;
+    .animatedIconContainer{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        .animatedIcon{
+            width: 100px;
+            // transform: translateX(200px);
+        }
+    }
+}
+.randomSection{
+    height: 100vh;
+    background-color:darkgray;
+}
